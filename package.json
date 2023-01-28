@@ -2,7 +2,12 @@
   "name": "opend_frontend",
   "version": "0.1.0",
   "description": "Internet Computer starter application",
-  "keywords": ["Internet Computer", "Motoko", "JavaScript", "Canister"],
+  "keywords": [
+    "Internet Computer",
+    "Motoko",
+    "JavaScript",
+    "Canister"
+  ],
   "scripts": {
     "build": "webpack",
     "prebuild": "npm run generate",
@@ -11,9 +16,9 @@
     "generate": "dfx generate opend_backend"
   },
   "devDependencies": {
-    "@dfinity/agent": "0.14.1",
+    "@dfinity/agent": "^0.14.1",
     "@dfinity/candid": "0.14.1",
-    "@dfinity/principal": "0.14.1",
+    "@dfinity/principal": "^0.14.1",
     "assert": "2.0.0",
     "buffer": "6.0.3",
     "copy-webpack-plugin": "^11.0.0",
@@ -35,5 +40,23 @@
     "last 2 firefox version",
     "last 2 safari version",
     "last 2 edge version"
-  ]
+  ],
+  "dependencies": {
+    "@dfinity/auth-client": "0.10.3",
+    "@dfinity/authentication": "0.10.3",
+    "@dfinity/identity": "0.10.3",
+    "bootstrap": "^5.2.3",
+    "css-loader": "^6.7.2",
+    "lit-html": "^2.5.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.40.0",
+    "react-router-dom": "^6.4.5",
+    "style-loader": "^3.3.1",
+    "svg-url-loader": "^8.0.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.4",
+    "url-loader": "^4.1.1"
+  }
 }
